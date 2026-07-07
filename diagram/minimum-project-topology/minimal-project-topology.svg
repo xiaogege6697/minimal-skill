@@ -1,0 +1,96 @@
+<svg viewBox="0 0 1120 760" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text { font-family: 'PingFang SC', 'Hiragino Sans GB', 'Helvetica Neue', Arial, sans-serif; }
+    .title { font-size: 24px; font-weight: 700; fill: #f8fafc; }
+    .subtitle { font-size: 12px; fill: #94a3b8; }
+    .name { font-size: 16px; font-weight: 700; fill: #f8fafc; text-anchor: middle; }
+    .desc { font-size: 11px; fill: #cbd5e1; text-anchor: middle; }
+    .edge { font-size: 10px; fill: #94a3b8; text-anchor: middle; }
+    .tag { font-size: 10px; font-weight: 600; }
+  </style>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+    </pattern>
+    <marker id="arrow-cyan" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#22d3ee"/></marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#34d399"/></marker>
+    <marker id="arrow-violet" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#a78bfa"/></marker>
+    <marker id="arrow-amber" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#fbbf24"/></marker>
+    <marker id="arrow-rose" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#fb7185"/></marker>
+  </defs>
+
+  <rect width="1120" height="760" fill="#0f172a"/>
+  <rect width="1120" height="760" fill="url(#grid)"/>
+
+  <text x="36" y="44" class="title" fill="#f8fafc" font-family="Arial, sans-serif" font-size="24" font-weight="700">极简 Skill · 项目最小拓扑</text>
+  <text x="36" y="68" class="subtitle">固定项目身份与核心关系，让模型、工具、人员和实现自由替换</text>
+
+  <!-- topology boundary -->
+  <rect x="44" y="96" width="1032" height="556" rx="18" fill="none" stroke="#475569" stroke-width="1.5" stroke-dasharray="10,6"/>
+  <text x="64" y="122" class="tag" fill="#94a3b8">MINIMUM PROJECT TOPOLOGY</text>
+
+  <!-- connectors, drawn first -->
+  <path d="M560 206 L560 276" fill="none" stroke="#22d3ee" stroke-width="2" marker-end="url(#arrow-cyan)"/>
+  <path d="M350 346 L462 346" fill="none" stroke="#fb7185" stroke-width="2" marker-end="url(#arrow-rose)"/>
+  <path d="M658 346 L776 346" fill="none" stroke="#34d399" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <path d="M866 408 L866 492 L666 492" fill="none" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrow-violet)"/>
+  <path d="M560 408 L560 476" fill="none" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrow-violet)"/>
+  <path d="M462 540 L350 540" fill="none" stroke="#fbbf24" stroke-width="2" marker-end="url(#arrow-amber)"/>
+  <path d="M252 476 L252 198 L456 198" fill="none" stroke="#fbbf24" stroke-width="2" marker-end="url(#arrow-amber)"/>
+
+  <!-- edge labels -->
+  <text x="612" y="245" class="edge">定义成功与边界</text>
+  <text x="406" y="333" class="edge">保护</text>
+  <text x="716" y="333" class="edge">接入</text>
+  <text x="783" y="479" class="edge">产生结果</text>
+  <text x="612" y="450" class="edge">规定验收</text>
+  <text x="406" y="527" class="edge">驱动演化</text>
+  <text x="324" y="188" class="edge">受目标与边界约束</text>
+
+  <!-- Identity / Goal -->
+  <rect x="456" y="136" width="208" height="72" rx="10" fill="#0f172a"/>
+  <rect x="456" y="136" width="208" height="72" rx="10" fill="rgba(8,51,68,0.45)" stroke="#22d3ee" stroke-width="2"/>
+  <text x="560" y="166" class="name">Identity / Goal</text>
+  <text x="560" y="187" class="desc">服务对象 · 状态变化 · 核心价值</text>
+
+  <!-- Boundary -->
+  <rect x="132" y="306" width="218" height="102" rx="10" fill="#0f172a"/>
+  <rect x="132" y="306" width="218" height="102" rx="10" fill="rgba(136,19,55,0.42)" stroke="#fb7185" stroke-width="2"/>
+  <text x="241" y="341" class="name">Boundary</text>
+  <text x="241" y="364" class="desc">非目标 · 权限 · 停止线</text>
+  <text x="241" y="384" class="desc">防止“成功地做错事”</text>
+
+  <!-- Stable Contract -->
+  <rect x="462" y="276" width="196" height="132" rx="12" fill="#0f172a"/>
+  <rect x="462" y="276" width="196" height="132" rx="12" fill="rgba(6,78,59,0.45)" stroke="#34d399" stroke-width="2.5"/>
+  <text x="560" y="315" class="name">Stable Contract</text>
+  <text x="560" y="341" class="desc">输入 → 状态转换 → 输出</text>
+  <text x="560" y="364" class="desc">窄腰接口 · 错误语义</text>
+  <text x="560" y="387" class="desc">固定必须成立什么</text>
+
+  <!-- Implementation -->
+  <rect x="776" y="306" width="218" height="102" rx="10" fill="#0f172a"/>
+  <rect x="776" y="306" width="218" height="102" rx="10" fill="rgba(6,78,59,0.35)" stroke="#34d399" stroke-width="1.6" stroke-dasharray="7,4"/>
+  <text x="885" y="341" class="name">Implementation</text>
+  <text x="885" y="364" class="desc">模型 · 工具 · Agent · 代码</text>
+  <text x="885" y="384" class="desc">默认可替换、可演化</text>
+
+  <!-- Evidence -->
+  <rect x="462" y="476" width="204" height="100" rx="10" fill="#0f172a"/>
+  <rect x="462" y="476" width="204" height="100" rx="10" fill="rgba(76,29,149,0.45)" stroke="#a78bfa" stroke-width="2"/>
+  <text x="564" y="511" class="name">Evidence</text>
+  <text x="564" y="534" class="desc">事实 · 行为 · 结果 · 回归</text>
+  <text x="564" y="554" class="desc">声明不算完成</text>
+
+  <!-- Evolution -->
+  <rect x="132" y="476" width="218" height="100" rx="10" fill="#0f172a"/>
+  <rect x="132" y="476" width="218" height="100" rx="10" fill="rgba(120,53,15,0.38)" stroke="#fbbf24" stroke-width="2"/>
+  <text x="241" y="511" class="name">Evolution</text>
+  <text x="241" y="534" class="desc">假设 · 小实验 · 对照</text>
+  <text x="241" y="554" class="desc">保留、调整或回退</text>
+
+  <!-- outside variability -->
+  <rect x="84" y="682" width="952" height="50" rx="10" fill="rgba(30,41,59,0.75)" stroke="#64748b"/>
+  <text x="560" y="704" class="name" font-size="13">可变表面</text>
+  <text x="560" y="722" class="desc">模型 · 工具 · 人员 · 窗口 · 环境 · 文件结构 · 实现路径</text>
+</svg>
