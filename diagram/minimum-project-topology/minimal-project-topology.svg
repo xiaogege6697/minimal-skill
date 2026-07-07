@@ -31,21 +31,23 @@
 
   <!-- connectors, drawn first -->
   <path d="M560 206 L560 276" fill="none" stroke="#22d3ee" stroke-width="2" marker-end="url(#arrow-cyan)"/>
-  <path d="M350 346 L462 346" fill="none" stroke="#fb7185" stroke-width="2" marker-end="url(#arrow-rose)"/>
+  <path d="M456 172 L400 172 L400 260 L241 260 L241 306" fill="none" stroke="#fb7185" stroke-width="2" marker-end="url(#arrow-rose)"/>
   <path d="M658 346 L776 346" fill="none" stroke="#34d399" stroke-width="2" marker-end="url(#arrow-green)"/>
   <path d="M866 408 L866 492 L666 492" fill="none" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrow-violet)"/>
   <path d="M560 408 L560 476" fill="none" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrow-violet)"/>
   <path d="M462 540 L350 540" fill="none" stroke="#fbbf24" stroke-width="2" marker-end="url(#arrow-amber)"/>
-  <path d="M252 476 L252 198 L456 198" fill="none" stroke="#fbbf24" stroke-width="2" marker-end="url(#arrow-amber)"/>
+  <path d="M241 476 L241 438 L430 438 L430 420 L462 420 L462 408" fill="none" stroke="#fbbf24" stroke-width="2" marker-end="url(#arrow-amber)"/>
+  <path d="M666 526 L1030 526 L1030 172 L664 172" fill="none" stroke="#22d3ee" stroke-width="1.5" stroke-dasharray="6,4" marker-end="url(#arrow-cyan)"/>
 
   <!-- edge labels -->
-  <text x="612" y="245" class="edge">定义成功与边界</text>
-  <text x="406" y="333" class="edge">保护</text>
+  <text x="620" y="245" class="edge">定义必要转换</text>
+  <text x="320" y="248" class="edge">界定保护边界</text>
   <text x="716" y="333" class="edge">接入</text>
   <text x="783" y="479" class="edge">产生结果</text>
   <text x="612" y="450" class="edge">规定验收</text>
   <text x="406" y="527" class="edge">驱动演化</text>
-  <text x="324" y="188" class="edge">受目标与边界约束</text>
+  <text x="350" y="426" class="edge">验证后更新契约</text>
+  <text x="900" y="160" class="edge">证据证明目标状态</text>
 
   <!-- Identity / Goal -->
   <rect x="456" y="136" width="208" height="72" rx="10" fill="#0f172a"/>

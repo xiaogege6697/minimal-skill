@@ -54,13 +54,10 @@ description: 为复杂、长期、跨窗口、跨模型、多人协作或不断�
 所有复杂项目至少检查以下六类关系：
 
 ```text
-Identity / Goal
-      ↓
-Boundary
-      ↓
-Stable Contract ─────→ Replaceable Implementation
-      ↑                         ↓
-Evolution ←──── Evidence ←──── Result
+Identity / Goal ─────→ Boundary
+Identity / Goal ─────→ Stable Contract ─────→ Replaceable Implementation ─────→ Result
+Result ─────→ Evidence ─────→ Identity / Goal
+Evidence ─────→ Evolution ─────→ Stable Contract
 ```
 
 ### 1. Identity / Goal
@@ -95,6 +92,8 @@ Evolution ←──── Evidence ←──── Result
 
 从目标对象、状态变化、约束和证据重新推导方案，不把当前实现或行业惯例误认为必然结构。
 
+作出架构、裁剪或升级决策前，必须回答四问：服务谁？要改变什么状态？哪些约束不可违反？什么证据足以证明改变发生？答不清时先调查，不作高影响决策。
+
 ### 目标导向
 
 按目标状态和验收证据判断完成，不按步骤数量、文档数量或流程完成度判断。
@@ -106,6 +105,8 @@ Evolution ←──── Evidence ←──── Result
 ### 中间契约
 
 模糊需求先转成可检查、可保存、可交接的中间结构，再进入执行。每层只向下一层暴露必要信息。
+
+每份核心契约至少写明：输入、必要状态转换或不变量、输出、错误语义、验收证据和下游消费者。缺一项时标记为待确认，不把推测伪装成契约。
 
 ### 复杂度通过拆分承载
 
@@ -144,7 +145,7 @@ Evolution ←──── Evidence ←──── Result
 1. 建立 `ProjectIdentity`。
 2. 定义当前状态、目标状态和验收证据。
 3. 明确非目标、边界、停止线和权限。
-4. 提取最小关系图与窄腰契约。
+4. 提取最小关系图，并逐项写明窄腰契约的输入、转换／不变量、输出、错误语义、证据和消费者。
 5. 区分不变量和可替换实现。
 6. 拆成可独立验收、局部修复的工作单元。
 7. 建立基准、Gate、回滚点和演化规则。
@@ -176,19 +177,14 @@ Evolution ←──── Evidence ←──── Result
 
 ## 输出格式
 
-使用 [references/templates/project-core-report.md](references/templates/project-core-report.md)，至少包含：
+按模式最小充分使用 [references/templates/project-core-report.md](references/templates/project-core-report.md)，不输出无关空章节。
 
-1. 是否通过复杂度门槛；
-2. 当前模式和任务边界；
-3. 一句话项目身份；
-4. 最小拓扑关系图；
-5. 核心不变量；
-6. 可替换实现；
-7. 非目标与停止线；
-8. 验收证据和基准；
-9. 工作单元与局部恢复策略；
-10. 演化与规则升级机制；
-11. 当前风险和下一步。
+所有模式保留公共窄腰：复杂度门槛与模式、项目身份、相关拓扑、边界、证据、风险和下一步。
+
+- `design` 增加：核心不变量、稳定契约、可替换实现、工作单元和演化机制。
+- `audit` 增加：删除测试、元素分类、真实证据、裁剪顺序和风险。
+- `evolve` 增加：基准、假设、影响面、实验、Gate和回退条件。
+- `handoff` 增加：当前状态、关键决策、证据链接、稳定版本和恢复入口。
 
 ## 输出纪律
 

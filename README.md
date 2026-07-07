@@ -41,20 +41,17 @@
 ## 项目最小拓扑
 
 ```text
-Identity / Goal
-      ↓
-Boundary
-      ↓
-Stable Contract ─────→ Replaceable Implementation
-      ↑                         ↓
-Evolution ←──── Evidence ←──── Result
+Identity / Goal ─────→ Boundary
+Identity / Goal ─────→ Stable Contract ─────→ Replaceable Implementation ─────→ Result
+Result ─────→ Evidence ─────→ Identity / Goal
+Evidence ─────→ Evolution ─────→ Stable Contract
 ```
 
 ### 不可删除的核心
 
 - **Identity / Goal**：服务谁，要把什么从状态A变成状态B。
 - **Boundary**：非目标、权限、停止线和高成本风险。
-- **Stable Contract**：输入、状态转换、输出和错误语义。
+- **Stable Contract**：输入、转换／不变量、输出、错误语义、验收证据和消费者。
 - **Evidence**：事实、行为、结果与回归证据。
 - **Evolution**：假设、小实验、对照、保留或回退。
 
@@ -80,6 +77,8 @@ Evolution ←──── Evidence ←──── Result
 8. 根据目标选择最小充分执行模式。
 9. 长期状态外部化，不依赖模型或窗口记忆。
 10. 自我升级依靠验证，不是不断添加规则。
+
+`v0.2.0` 为上述原则增加11个行为 eval，覆盖正向触发、误触发、契约完整性、证据验收、局部恢复、规则升级和跨环境交接。
 
 ## 删除测试
 
