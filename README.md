@@ -80,6 +80,8 @@ Evidence ─────→ Evolution ─────→ Stable Contract
 
 `v0.2.0` 为上述原则增加11个行为 eval，覆盖正向触发、误触发、契约完整性、证据验收、局部恢复、规则升级和跨环境交接。
 
+`v0.3.0` 增加核心／窄腰／柔性默认方案的分层参考，以及一组 Agent OS 小工具链案例，用真实项目维护经验校准“哪些不能删、哪些只是当前做法”。
+
 ## 删除测试
 
 判断一个元素是否属于项目核心：
@@ -106,7 +108,10 @@ cp -R minimal-skill ~/.codex/skills/minimal-skill
 ```text
 minimal-skill/
 ├── SKILL.md
+├── examples/
+│   └── agent-os-toolchain.md
 ├── references/
+│   ├── core-waist-flexibility.md
 │   ├── minimum-project-topology.md
 │   ├── rule-evolution.md
 │   └── templates/project-core-report.md
@@ -119,6 +124,7 @@ minimal-skill/
 - 极简 Skill：识别、设计、审计项目最小拓扑。
 - 领域 Skill：完成漫画、数据库、发布、文档等具体工作。
 - 维护胶囊：把已经确认的项目核心和当前状态持久化。
+- Agent OS 工具链案例：见 [examples/agent-os-toolchain.md](examples/agent-os-toolchain.md)，展示一组小工具如何共享核心、窄腰和柔性默认方案。
 
 它不取代领域工作流，也不为小任务增加流程税。
 

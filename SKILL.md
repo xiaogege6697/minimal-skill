@@ -136,7 +136,7 @@ Evidence ─────→ Evolution ─────→ Stable Contract
 
 其他内容应标记为默认值、推荐策略或实验假设。定期审计硬约束，删除已经失去保护对象的规则。
 
-规则的候选、实验、默认、约束和过期状态见 [references/rule-evolution.md](references/rule-evolution.md)。
+分层判断见 [references/core-waist-flexibility.md](references/core-waist-flexibility.md)。规则的候选、实验、默认、约束和过期状态见 [references/rule-evolution.md](references/rule-evolution.md)。
 
 ## 四种模式的执行
 
