@@ -1,5 +1,7 @@
 # 极简 Skill · minimal-skill
 
+> **Minimal Project Topology Skill** — find the smallest undeletable structure of a complex project, so tools, models, people, sessions and implementations can change freely while the project's identity and core capability stay intact.
+>
 > 找到复杂项目不可删除的最小关系结构，让工具、模型、人员、窗口和实现方式自由变化，而项目身份与核心能力保持不变。
 
 ![项目最小拓扑](diagram/minimum-project-topology/minimal-project-topology.svg)
@@ -99,9 +101,12 @@ Evidence ─────→ Evolution ─────→ Stable Contract
 
 ## 安装
 
+适用于 Claude Code、Codex、OpenClaw 等加载 SKILL.md 式技能的 Agent 客户端。
+
 ```bash
 git clone https://github.com/xiaogege6697/minimal-skill.git
 cp -R minimal-skill ~/.codex/skills/minimal-skill
+# 或 ~/.agents/skills/ / ~/.claude/skills/ / OpenClaw shared-skills
 ```
 
 重新开启会话后，可以显式调用 `$minimal-skill`，也可以直接使用上面的自然语言触发。
@@ -134,3 +139,7 @@ minimal-skill/
 ## License
 
 [MIT](LICENSE)
+
+## 相关项目
+
+更多思维分身与工作流 Skill（投资视角蒸馏、公众号流水线、爬虫决策树等）见 [github.com/xiaogege6697](https://github.com/xiaogege6697)。
