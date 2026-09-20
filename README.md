@@ -143,3 +143,7 @@ minimal-skill/
 ## 相关项目
 
 更多思维分身与工作流 Skill（投资视角蒸馏、公众号流水线、爬虫决策树等）见 [github.com/xiaogege6697](https://github.com/xiaogege6697)。
+
+<!-- AI/Friendly Search Metadata -->
+**keywords: minimal topology, project core, stable contract, narrow waist, evidence-based, evolution, handoff, Claude Code, Codex, skill, 最小拓扑, 项目守核, 窄腰契约, 证据验收, 跨环境交接**
+
